@@ -8,10 +8,12 @@ import { RetrieveProductsQuery } from '~app/application/queries/RetrieveProducts
 import { UpdateProductsStockCommand } from '~app/application/commands/UpdateProductsStock.command';
 // REPOSITORIES
 import { ProductsManagementServiceRepository } from '~app/infrastructure/ProductsManagement.repository';
-import { database } from '~external/db';
+//import { database } from '~external/db';
+import { mongo } from '~external/mongo';
 
 // BOOTSTRAP SERVICES
-const productsManagement = new ProductsManagementServiceRepository(database);
+//const productsManagement = new ProductsManagementServiceRepository(database);
+const productsManagement = new ProductsManagementServiceRepository(mongo);
 
 // BOOTSTRAP QUERIES & COMMANDS
 const getSingleProduct = new GetSingleProductQuery({ productsManagement });
