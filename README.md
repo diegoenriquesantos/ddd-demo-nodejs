@@ -6,23 +6,24 @@ This Demo use the following services:
 - ordering: use NATS messaging system and postgres database
 - products: use mongodb database
 
-Run the following commands:
-$ yarn
-$ docker-compose up -d
+Run the following commands: <br />
+`$ yarn`<br />
+`$ docker-compose up -d`<br />
 
 Test GraphQL products:
-http://localhost:3000/products
 
-with the following query:
-query {
+http://localhost:3000/products <br />
+
+with the following query: <br />
+`query {
   products {
     id
     name
     price
     amount
   }
-}
+}`
 
-Test Mongo Express:
+Test Mongo Express: <br />
 http://localhost:8081/db/default/
 
