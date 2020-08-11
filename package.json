@@ -1,9 +1,10 @@
 {
-  "name": "base-repo",
+  "name": "ddd-demo-nodejs",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:sckv/almeriajs-ddd.git",
-  "author": "Konstantin Knyazev <konstantinknyazev@outlook.com>",
+  "repository": "git@github.com:diegoenriquesantos/ddd-demo-nodejs.git",
+  "author": "Diego Santos <diego.enrique.santos@gmail.com>",
+  "original version": "git@github.com:sckv/almeriajs-ddd.git",
   "license": "MIT",
   "private": true,
   "scripts": {
